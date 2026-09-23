@@ -1,0 +1,58 @@
+{
+    "name": "sushilk/claude-cli",
+    "description": "Anthropic Claude Code CLI",
+    "type": "library",
+    "keywords": [
+        "claude-cli",
+        "claude-code",
+        "claude-ai",
+        "console",
+        "global",
+        "sushilk"
+    ],
+    "require": {
+        "php": "^8.4",
+        "anthropic-ai/sdk": "^0.51.0",
+        "guzzlehttp/guzzle": "^8.2",
+        "laravel/prompts": "^0.3.24",
+        "league/commonmark": "^2.10",
+        "scrivo/highlight.php": "^9.18",
+        "symfony/console": "^8.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.32",
+        "pestphp/pest": "^5.2",
+        "phpstan/phpstan": "^2.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sushilk\\ClaudeCli\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sushil Kumar",
+            "email": "sushilkumbhar77@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "bin": [
+        "bin/claude"
+    ],
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "scripts": {
+        "lint": [
+            "pint --parallel",
+            "phpstan analyse src --level=max"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
