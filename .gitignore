@@ -1,3 +1,7 @@
 /vendor/
 composer.lock
+<<<<<<< HEAD
 
+=======
+.env
+>>>>>>> 95d9d7b (update)
