@@ -13,8 +13,8 @@ namespace ClaudeCli\Config;
 final readonly class Config
 {
     /**
-     * @param ModelName $model
-     * @param ApiKey    $apiKey
+     * @param  ModelName  $model
+     * @param  ApiKey  $apiKey
      */
     public function __construct(
         private string $model,

@@ -7,13 +7,9 @@ if (file_exists(__DIR__.'/../../../autoload.php')) {
   require __DIR__.'/../vendor/autoload.php';
 }
 
-<<<<<<< HEAD
-$app = new Symfony\Component\Console\Application('Claude Code CLI', '0.0.1');
-=======
 use ClaudeCli\Application;
 
 //$app = new Symfony\Component\Console\Application('Claude Code CLI', '0.0.1');
->>>>>>> 95d9d7b (update)
 
 /* if (method_exists($app, 'addCommand')) {
   $app->addCommand(new Laravel\Installer\Console\NewCommand);
@@ -23,9 +19,6 @@ use ClaudeCli\Application;
   $app->add(new Laravel\Installer\Console\PackageCommand);
 } */
 
-<<<<<<< HEAD
-$app->run();
-=======
 //$app->run();
 
 $prompt = implode(' ', array_slice($argv, 1));
@@ -38,4 +31,3 @@ if ($prompt === '') {
 $cli = new Application();
 
 $cli->message($prompt);
->>>>>>> 95d9d7b (update)

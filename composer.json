@@ -27,16 +27,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-<<<<<<< HEAD
-            "Sushilk\\ClaudeCli\\": "src/"
-=======
             "ClaudeCli\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
->>>>>>> 95d9d7b (update)
         }
     },
     "authors": [
@@ -59,7 +55,12 @@
     "scripts": {
         "lint": [
             "pint --parallel",
-            "phpstan analyse src --level=max"
+            "phpstan analyse"
+        ],
+        "test": [
+            "pint --parallel --test",
+            "phpstan analyse",
+            "pest"
         ]
     },
     "minimum-stability": "dev",
